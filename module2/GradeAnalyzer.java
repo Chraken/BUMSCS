@@ -1,3 +1,4 @@
+import java.io.*;
 import java.util.ArrayList;
 
 public class GradeAnalyzer {
@@ -7,7 +8,7 @@ public class GradeAnalyzer {
 
     public static void main(String[] args) {
         // Step 1: read scores from file
-        ArrayList<Integer> scores = readScores("scores.txt");
+        ArrayList<Integer> scores = readScores("module2/scores.txt");
 
         // Handle empty file edge case early
         if (scores.isEmpty()) {
